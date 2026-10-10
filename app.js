@@ -229,7 +229,7 @@ function renderMain(g,members){
       :act.map(m=>'<span><i class="dot" style="--c:var(--m'+cx(m)+')"></i>'+esc(m.name)+'</span>').join(''))+'</div></div>';
   if(editing){
     h+='<div class="editbar" style="--c:var(--m'+cx(editing)+')"><b>'+esc(editing.name)+'\'s schedule</b>'
-      +'<button class="btn sm" data-act="addclass">+ Add class</button>'
+      +'<button class="btn sm" data-act="addclass">+ Add Event</button>'
       +(S.imgCaps?'<button class="btn sm" data-act="import">Import from photo</button>':'')
       +'<button class="btn sm" data-act="persondtl">Name and colour</button>'
       +'<button class="btn sm primary" data-act="done">Done</button></div>'
